@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- changed -->
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      body {
+        font-family: "Times New Roman", Georgia, Serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+      }
+
+      /* my css */
+      .my-img-size-1 {
+        width: 350px;
+      }
+
+      .my-image-size-2 {
+        width: 300px;
+      }
+
+      .my-scrolling {
+        height: 100px;
+        overflow: auto;
+      }
+
+      /* center the carousel slide */
+      .mySlides {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 55%;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-white w3-padding w3-card"
+        style="letter-spacing: 4px"
+      >
+        <div>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-search"></i
+          ></a>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-shopping-basket"></i
+          ></a>
+        </div>
+
+        <a href="#home" class="w3-bar-item w3-button w3-large"
+          >Alys Meadow Presley</a
+        >
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+          <a href="#mosaics" class="w3-bar-item w3-button">Mosaics</a>
+        </div>
+
+        <!-- begin added for mobile version -->
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <!-- end added for mobile version -->
+      </div>
+    </div>
+
+    <!-- begin added for mobile version -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-light-grey w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close &times;</a
+      >
+      <a
+        href="#about"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-text-black"
+        >About</a
+      >
+      <a
+        href="#gallery"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-text-black"
+        >Gallery</a
+      >
+      <a
+        href="#mosaics"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-text-black"
+        >Mosaics</a
+      >
+    </nav>
+    <!-- end added for mobile version -->
+
+    <!-- Header -->
+    <header
+      class="w3-display-container w3-content w3-wide w3-padding-16"
+      style="max-width: 1600px; min-width: 500px"
+      id="home"
+    >
+      <img
+        class="w3-image"
+        src="/images/images/watercolor cactus for cover copy.jpeg"
+        alt="Cactus with Panties"
+        style="width: 100%"
+      />
+
+    </header>
+
+    <!-- Page content -->
+    <div id="about" class="w3-content" style="max-width: 1200px">
+      <!-- About Section -->
+      <div id="about" class="w3-padding-top-64">
+        <h1 class="w3-center">About</h1>
+          <p>
+            <img
+              src="/images/images/Me at Chalk hill 3.jpeg"
+              class="w3-padding w3-left my-img-size-1"
+              alt="Meadow Presley at Chalk Hill Residency
+            Exhibition"
+            />
+            <div class="w3-padding-large">
+              <h2>Artist Statement</h2>
+            Meadow Presley is a practicing artist and credentialed teacher with
+            over twenty years experience working with both youth and adults. Her
+            teaching experience includes ceramics, mosaics, drawing and
+            painting, watercolor, and mixed media/textiles. She earned a BA in
+            Art Practice from UC Berkeley and most recently an AA in Landscape
+            Architecture from Merritt College. In her own practice Meadow’s
+            artwork, exhibited locally and nationally, is influenced by her love
+            for nature, travel, and popular culture. She has designed and
+            installed numerous collaborative public art mosaics for the City of
+            San Leandro, Kaiser Permanente and other local businesses.
+            <span
+              >Reference:
+              <a href="" target="_blank" class="w3-hover-opacity">https://</a>
+            </span>
+          </p>
+        </div>
+          <p>
+            <img
+              src="/images/images/me on ladder sugar plums copy.jpg"
+              class="w3-padding w3-right my-image-size-2"
+              alt="Meadow Presley at Chalk Hill Residency
+            Exhibition"
+            />
+            <div class="w3-padding-large">
+              <h2>Art Mediums</h2>
+              <h4>Mosaics</h4>
+            Meadow Presley has designed and facilitated numerous
+            collaborative community mosaics for Stepping Stone Growth Center,
+            the San Leandro Improvement Agency, Peterson Cat, Kaiser Permanente,
+            and Creative Growth Art Center. Her whimsical mixed media mosaic
+            murals and panels include broken tile, handmade ceramic tiles,
+            mirror, glass and found objects. Meadow taught mosaics in the Artful
+            Steps program at Stepping Stones Growth Center in San Leandro for
+            ten years.
+          </p>
+          <p>
+            <h4> Ceramics</h4>
+            Meadow Presley creates both functional and sculptural
+            ceramic artwork around the themes of nature, primarily native
+            California plants and animals, and nostalgia. Her ceramics have been
+            exhibited in numerous Bay Area galleries and featured in East Bay
+            Open Studios. Meadow has taught ceramics for Oakland Unified School
+            District, Stepping Stones Growth Center in San Leandro and is
+            currently teaching at Berkeley Adult School.
+          </p>
+          <p>
+            <h4>Watercolor</h4>
+            Meadow Presley began working extensively on her mixed
+            media watercolor paintings during the pandemic in 2020. She combines
+            her interests in California flora and fauna, botanical drawing, and
+            nostalgia with watercolor techniques such as wet on wet, water
+            soluble graphite and water color pencil. She currently teaches
+            Watercolor Techniques at Berkeley Adult School in Berkeley,
+            California.
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Gallery Section -->
+      <div class="w3-row w3-padding-64" id="gallery">
+        <h1 class="w3-center">Gallery</h1>
+        <div class="w3-padding-large">
+          <div>
+            <img class="mySlides" src="/images/images/ceramic frog.jpeg" style="width: 100%;"/>
+            <img class="mySlides" src="/images/images/ceramic owl bowl.jpeg" style="width: 100%;"/>
+            <img class="mySlides" src="/images/images/ceramic rabbit.jpeg" style="width: 100%;"/>
+            <img class="mySlides" src="/images/images/ceramic mushroom pitcher.jpeg" style="width: 100%;"/>
+            <div class="w3-col s3">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="/images/images/ceramic frog.jpeg"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(1)"
+              />
+            </div>
+            <div class="w3-col s3">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="/images/images/ceramic owl bowl.jpeg"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(4)"
+              />
+            </div>
+            <div class="w3-col s3">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="/images/images/ceramic rabbit.jpeg"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(2)"
+              />
+            </div>
+            <div class="w3-col s3">
+              <img
+                class="demo w3-opacity w3-hover-opacity-off"
+                src="/images/images/ceramic mushroom pitcher.jpeg"
+                style="width: 100%; cursor: pointer"
+                onclick="currentDiv(3)"
+              />
+            </div>
+          </div>
+
+
+      <!-- 3 column scrollable areas-->  
+      <div class="w3-row">
+        <div
+          class="w3-col m4 w3-panel w3-light-grey w3-border-left w3-border-bottom w3-padding"
+        >
+          <div
+            class="w3-center w3-sand"
+            style="margin-left: -16px; margin-right: -16px; margin-top: -18px"
+          >
+            <h2>Mosaics</h2>
+          </div>
+          <div class="my-scrolling" style="padding-right: 10px">
+            <p>
+              Meadow Presley has designed and facilitated numerous
+              collaborative community mosaics for Stepping Stone Growth Center,
+              the San Leandro Improvement Agency, Peterson Cat, Kaiser Permanente,
+              and Creative Growth Art Center. Her whimsical mixed media mosaic
+              murals and panels include broken tile, handmade ceramic tiles,
+              mirror, glass and found objects. Meadow taught mosaics in the Artful
+              Steps program at Stepping Stones Growth Center in San Leandro for
+              ten years.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w3-col m4 w3-panel w3-sand w3-border-left w3-border-top w3-border-bottom w3-padding"
+        >
+          <div
+            class="w3-center w3-light-grey"
+            style="margin-left: -16px; margin-right: -16px; margin-top: -18px"
+          >
+            <h2>Ceramics</h2>
+          </div>
+          <div class="my-scrolling" style="padding-right: 10px">
+            <p>
+              Meadow Presley creates both functional and sculptural
+              ceramic artwork around the themes of nature, primarily native
+              California plants and animals, and nostalgia. Her ceramics have been
+              exhibited in numerous Bay Area galleries and featured in East Bay
+              Open Studios. Meadow has taught ceramics for Oakland Unified School
+              District, Stepping Stones Growth Center in San Leandro and is
+              currently teaching at Berkeley Adult School.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w3-col m4 w3-panel w3-light-grey w3-border-left w3-border-bottom w3-border-right w3-padding"
+        >
+          <div
+            class="w3-center w3-sand"
+            style="margin-left: -16px; margin-right: -16px; margin-top: -18px"
+          >
+            <h2>Watercolor</h2>
+          </div>
+          <div class="my-scrolling" style="padding-right: 10px">
+            <p>
+              Meadow Presley began working extensively on her mixed
+              media watercolor paintings during the pandemic in 2020. She combines
+              her interests in California flora and fauna, botanical drawing, and
+              nostalgia with watercolor techniques such as wet on wet, water
+              soluble graphite and water color pencil. She currently teaches
+              Watercolor Techniques at Berkeley Adult School in Berkeley,
+              California.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <hr />
+
+      <!-- Mosaics Section -->
+    <div class="w3-row w3-padding-64" id="mosaics">
+
+     <!-- Add Sortable Table -->
+      <div class="w3-content" style="max-width: 1200px;"> 
+        <div class="w3-row w3-padding-64" id="mosaics">
+          <h1 class="w3-center">Mosaics</h1>
+          <div class="w3-padding-large">
+            <table id="myTable" class="w3-table-all">
+              <thead>
+                <tr class="w3-light-grey">
+                  <th>UTENSIL</th>
+                  <th>TYPE</th>
+                  <th>NAME</th>
+                  <th>SIZE</th>
+                </tr>
+              </thead>
+              <tr class="w3-hover-sand">
+                <td><img src="/images/images/watercolor volkswagon and animals-2.jpeg" style="width: 120px" /></td>
+                <td>Cookware</td>
+                <td>Skillet</td>
+                <td>Medium</td>
+              </tr>
+              <tr class="w3-hover-sand">
+                <td><img src="/images/images/ceramic race car.JPG" style="width: 120px;" /></td>
+                <td>Hand Tool</td>
+                <td>Wooden Spoon</td>
+                <td>Small</td>
+              </tr>
+              <tr class="w3-hover-sand">
+                <td><img src="/images/images/ceramic race car.JPG" style="width: 120px;" /></td>
+                <td>Hand Tool</td>
+                <td>Wooden Spoon</td>
+                <td>Small</td>
+              </tr>
+              <tr class="w3-hover-sand">
+                <td><img src="/images/images/ceramic race car.JPG" style="width: 120px;" /></td>
+                <td>Hand Tool</td>
+                <td>Wooden Spoon</td>
+                <td>Small</td>
+              </tr>
+            </table> 
+        </div>
+    </div>
+    <hr />
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // begin added for mobile version
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+      // end added for mobile version
+
+      // begin added for carousel
+      // step 2: add javascript to support carousel slideshow feature
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // end added for carousel
+
+      // begin added for sortable
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // end added for sortable
+    </script>
+  </body>
+</html>
