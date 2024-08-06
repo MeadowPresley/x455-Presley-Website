@@ -73,15 +73,16 @@
           ></a>
         </div>
 
-        <a href="#home" class="w3-bar-item w3-button w3-large"
+        <a href="#home" class="w3-bar-item w3-button w3-xlarge"
           >Alys Meadow Presley</a
         >
         <!-- Right-sided navbar links. Hide them on small screens -->
-        <div class="w3-right w3-hide-small">
+        <div class="w3-padding-large w3-hide-small w3-right">
           <a href="#about" class="w3-bar-item w3-button">About</a>
           <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
           <a href="#mosaics" class="w3-bar-item w3-button">Mosaics</a>
           <a href="#tutorials" class="w3-bar-item w3-button">Tutorials</a>
+          <a href="#shop" class="w3-bar-item w3-button">Shop</a>
         </div>
 
         <!-- begin added for mobile version -->
@@ -128,28 +129,36 @@
         >Mosaics</a
       >
       <a
-      href="#tutorials"
-      onclick="w3_close()"
-      class="w3-bar-item w3-button w3-text-black"
-      >Tutorials</a
+        href="#tutorials"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-text-black"
+        >Tutorials</a
+      >
+      <a
+        href="#shop"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-text-black"
+        >Shop</a
       >
     </nav>
     <!-- end added for mobile version -->
 
     <!-- Header -->
     <header
-      class="w3-display-container w3-content w3-wide w3-padding-16"
-      style="max-width: 1600px; min-width: 500px"
+      class="w3-display-container w3-content w3-wide w3-padding-top-64"
+      style="max-width: 1600px; min-width: 500px; padding-top-xlarge;"
       id="home"
     >
+      <header class="w3-center w3-sand w3-padding-32"></header>
       <img
         class="w3-image"
         src="/images/images/watercolor cactus for cover copy.jpeg"
         alt="Cactus with Panties"
         style="width: 100%"
       />
-
+      <header class="w3-center w3-sand w3-padding-32"></header>
     </header>
+  </hr>
 
     <!-- Page content -->
     <div id="about" class="w3-content" style="max-width: 1200px">
@@ -164,20 +173,20 @@
             Exhibition"
             />
             <div class="w3-padding-large">
-              <h2>Artist Statement</h2>
-            Meadow Presley is a practicing artist and credentialed teacher with
-            over twenty years experience working with both youth and adults. Her
-            teaching experience includes ceramics, mosaics, drawing and
-            painting, watercolor, and mixed media/textiles. She earned a BA in
-            Art Practice from UC Berkeley and most recently an AA in Landscape
-            Architecture from Merritt College. In her own practice Meadow’s
+              <h2>Artist Bio</h2>
+            Meadow Presley is a practicing artist and credentialed art teacher living in Oakland, California.
+            Her teaching experience includes ceramics, mosaics, drawing and
+            painting, watercolor, mixed media and textiles. Meadow currently teaches ceramics and watercolor at Berkley Adult School. She earned a BA in
+            Art Practice from UC Berkeley, an AA in Landscape
+            Architecture from Merritt College and is currently working on a Graphic Design Certificate from UC Berkeley Extension.
+            In her own practice Meadow’s
             artwork, exhibited locally and nationally, is influenced by her love
             for nature, travel, and popular culture. She has designed and
             installed numerous collaborative public art mosaics for the City of
             San Leandro, Kaiser Permanente and other local businesses.
             <span
               >Reference:
-              <a href="" target="_blank" class="w3-hover-opacity">https://</a>
+              <a href="https://bas.berkeleyschools.net/" target="_blank" class="w3-hover-opacity">https://bas.berkeleyschools.net/</a>
             </span>
           </p>
         </div>
@@ -192,13 +201,17 @@
               <h2>Art Mediums</h2>
               <h4>Mosaics</h4>
             Meadow Presley has designed and facilitated numerous
-            collaborative community mosaics for Stepping Stone Growth Center,
+            collaborative community mosaics for The Leap Center, Stepping Stone Growth Center,
             the San Leandro Improvement Agency, Peterson Cat, Kaiser Permanente,
             and Creative Growth Art Center. Her whimsical mixed media mosaic
             murals and panels include broken tile, handmade ceramic tiles,
             mirror, glass and found objects. Meadow taught mosaics in the Artful
             Steps program at Stepping Stones Growth Center in San Leandro for
             ten years.
+            <span
+            >Reference:
+            <a href="https://theleapcenter.net/" target="_blank" class="w3-hover-opacity">https://theleapcenter.net/</a>
+          </span>
           </p>
           <p>
             <h4> Ceramics</h4>
@@ -219,6 +232,7 @@
             soluble graphite and water color pencil. She currently teaches
             Watercolor Techniques at Berkeley Adult School in Berkeley,
             California.
+
           </p>
         </div>
       </div>
@@ -347,40 +361,46 @@
      <!-- Add Sortable Table -->
       <div class="w3-content" style="max-width: 1200px;"> 
         <div class="w3-row w3-padding-64" id="mosaics">
-          <h1 class="w3-center">Mosaics</h1>
+          <h1 class="w3-center">Public Art Mosaic Projects</h1>
           <div class="w3-padding-large">
             <table id="myTable" class="w3-table-all">
               <thead>
                 <tr class="w3-light-grey">
-                  <th>UTENSIL</th>
-                  <th>TYPE</th>
-                  <th>NAME</th>
-                  <th>SIZE</th>
+                  <th>Mosaic Image</th>
+                  <th>Project Name</th>
+                  <th>Location</th>
+                  <th>Size</th>
                 </tr>
               </thead>
               <tr class="w3-hover-sand">
                 <td><img src="/images/images/watercolor volkswagon and animals-2.jpeg" style="width: 120px" /></td>
-                <td>Cookware</td>
-                <td>Skillet</td>
-                <td>Medium</td>
+                <td>First Steps of Stepping Stones Growth Center/The Leap Center</td>
+                <td>311 MacArthur Blvd. 
+                    San Leandro, CA 94577</td>
+                <td>24' x 8'</td>
               </tr>
               <tr class="w3-hover-sand">
                 <td><img src="/images/images/ceramic race car.JPG" style="width: 120px;" /></td>
-                <td>Hand Tool</td>
-                <td>Wooden Spoon</td>
-                <td>Small</td>
+                <td>Stepping Stones Growth Center/The Leap Center</td>
+                <td>311 MacArthur Blvd. 
+                  San Leandro, CA 94577</td>
+                <td>40' x 5'</td>
               </tr>
               <tr class="w3-hover-sand">
                 <td><img src="/images/images/ceramic race car.JPG" style="width: 120px;" /></td>
-                <td>Hand Tool</td>
-                <td>Wooden Spoon</td>
-                <td>Small</td>
+                <td>Farmers Market Follies for Kaiser Permanente</td>
+                <td>2500 Merced St.
+                    San Leandro, CA 94577
+                </td>
+                <td>8 Panels 36" x 24" each</td>
               </tr>
               <tr class="w3-hover-sand">
                 <td><img src="/images/images/ceramic race car.JPG" style="width: 120px;" /></td>
-                <td>Hand Tool</td>
-                <td>Wooden Spoon</td>
-                <td>Small</td>
+                <td>Planters for San Leandro Improvement Organization</td>
+                <td>384 W Estudillo Ave
+                    San Leandro, CA 94577
+                </td>
+                <td>3 Planters 3' x 3.5' each</td>
               </tr>
             </table> 
         </div>
@@ -403,9 +423,44 @@
           <iframe height="300" src="https://www.youtube.com/embed/sBcJGkJubCo?si=Pbn5SMZjKNnfd0tq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
+    </div> 
+    <hr />
+.
+    <!-- accordian: add button, content, javascript-->
+    <div class="w3-row">
+      <div class="w3-col s6 w3-left" style="padding-right: 3px">
+        <button
+          onclick="myAccordion('accordion1')"
+          class="w3-button w3-block w3-sand w3-hover-light-grey w3-center-align"
+          id="accordionBtn1">
+          <h4>Beginner Ceramic Handbuilding<i class="fa fa-caret-down"></i></h4>
+        </button>
+        <div id="accordion1" class="w3-hide w3-container" style="height: 260px">
+          <p>
+            The three methods of handbuilding are pinching, coiling and slab building. Once you have experience with these three methods, you can make just about any object out of clay. It helps to start with pinching, and build upon the technique with coiling, before moving onto to slab construction.
+          </p>
+        </div>
+      </div>
+      <div class="w3-col s6 w3-left" style="padding-left: 3px">
+        <button
+          onclick="myAccordion('accordion2')"
+          class="w3-button w3-block w3-sand w3-hover-light-grey w3-center-align"
+          id="accordionBtn1">
+          <h4>Basic Ceramic Glazing<i class="fa fa-caret-down"></i></h4>
+        </button>
+        <div id="accordion2" class="w3-hide w3-container" style="height: 260px">
+          <p>
+            Ceramic glazes are an impenetrable layer or coating applied to bisque-ware that is used to decorate pottery and can also be used to waterproof an item. There are many possibilities when glazing pottery and ceramics, from colorful patterns to mineral reactions.
+
+The general process of glazing ceramics is by mixing your glazes, applying the glaze to bisque-ware, letting it dry, then finally loading it into the kiln for the glaze firing. The kiln is slowly brought up to the appropriate temperature for the silica in the glaze to melt, then slowly cooled again. This makes your pottery strong and solid, and impervious to water and the elements.
+
+The most practical purpose of glazing ceramics is to make them food-safe and waterproof. Clay bisque-ware that has been fired once is not yet waterproof or food-safe until the glaze is applied and subsequently fired again.
+          </p>
+        </div>
+      </div>
     </div>
-    
-    </div>
+  </div>
+</div>
 
     <!-- Footer -->
     <footer class="w3-center w3-light-grey w3-padding-32">
@@ -496,6 +551,21 @@
         });
       });
       // end added for sortable
+
+      // begin added for accordion
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-sand", "w3-light-blue");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-light-blue", "w3-sand");
+        }
+      }
+      // end added for accordion
     </script>
   </body>
 </html>
